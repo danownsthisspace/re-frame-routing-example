@@ -1,0 +1,128 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: npx shadow-cljs -d cider/cider-nrepl:0.26.0 watch :app
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉shadow.user꞉>  ; Use `alt+enter` to evaluate
+; Creating cljs repl session...
+; Connecting cljs repl: shadow-cljs...
+;   The Calva Connection Log might have more connection progress information.
+; Connected session: cljs, repl: :app
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: Toggle REPL connection*
+;    (There is a button in the status bar for this)
+; Jack-in done.
+cljs꞉cljs.user꞉>  ; Use `alt+enter` to evaluate
+[#object[routes_example$views$home_panel]]
+clj꞉routes-example.views꞉> 
+[:div "No panel found for this route."]
+clj꞉routes-example.routes꞉> 
+"/home"
+clj꞉routes-example.routes꞉> 
+#'routes-example.routes/routes
+clj꞉routes-example.routes꞉> 
+"/"
+clj꞉routes-example.routes꞉> 
+"/about"
+clj꞉routes-example.routes꞉> 
+"/about"
+clj꞉routes-example.routes꞉> 
+"/"
+clj꞉routes-example.routes꞉> 
+{:handler :home}
+clj꞉routes-example.routes꞉> 
+#'routes-example.routes/routes
+clj꞉routes-example.routes꞉> 
+{:handler :home1}
+clj꞉routes-example.routes꞉> 
+#'routes-example.routes/routes
+clj꞉routes-example.routes꞉> 
+:home-panel
+clj꞉routes-example.routes꞉> 
+:about-panel
+clj꞉routes-example.routes꞉> 
+:repl/exception!
+; 
+; Execution error (Error) at (<cljs repl>:1).
+Doesn't support name: 
+clj꞉routes-example.routes꞉> 
+:users-index-panel
+clj꞉routes-example.routes꞉> 
+nil
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:1:1
+ Use of undeclared Var routes-example.users-index.views/users
+--------------------------------------------------------------------------------
+
+clj꞉routes-example.users-index.views꞉> 
+#'routes-example.routes/routes
+clj꞉routes-example.routes꞉> 
+{:route-params {:id "1"}, :handler :user-view}
+clj꞉routes-example.routes꞉> 
+{:route-params {:id "2"}, :handler :user-view}
+clj꞉routes-example.routes꞉> 
+{:handler :users-index}
+clj꞉routes-example.routes꞉> 
+nil
+; ------ WARNING - :undeclared-var -----------------------------------------------
+;  Resource: <eval>:1:32
+ Use of undeclared Var routes-example.user-view.views/parse
+--------------------------------------------------------------------------------
+
+clj꞉routes-example.user-view.views꞉> 
+{:route-params {:id "1"}, :handler :user-view}
+clj꞉routes-example.routes꞉> 
+:user-view-panel
+clj꞉routes-example.routes꞉> 
+:user-view-panel
+clj꞉routes-example.routes꞉> 
+{:id "1", :name "todd"}
+clj꞉routes-example.user-view.subs꞉> 
+nil
+clj꞉routes-example.user-view.subs꞉> 
+{:route-params {:id "1"}, :handler :user-view}
+clj꞉routes-example.routes꞉> 
+{:route-params {:id "1"}, :handler :user-view}
+clj꞉routes-example.routes꞉> 
+:home-panel
+clj꞉routes-example.subs꞉> 
+"value"
+clj꞉routes-example.subs꞉> 
+nil
+; ------ WARNING - :invalid-arithmetic -------------------------------------------
+;  Resource: <eval>:1:1
+ cljs.core/bit-or, all arguments must be numbers, got [string number] instead
+--------------------------------------------------------------------------------
+
+clj꞉routes-example.user-view.subs꞉> 
+nil
+; ------ WARNING - :invalid-arithmetic -------------------------------------------
+;  Resource: <eval>:1:1
+ cljs.core/bit-or, all arguments must be numbers, got [string number] instead
+--------------------------------------------------------------------------------
+
+clj꞉routes-example.user-view.subs꞉> 
+"/"
+clj꞉routes-example.routes꞉> 
+:repl/exception!
+; 
+; Execution error (ExceptionInfo) at (<cljs repl>:1).
+Cannot form URI without a value given for :id parameter
+clj꞉routes-example.routes꞉> 
+"/users/10"
+clj꞉routes-example.routes꞉> 
+"/users/10"
+clj꞉routes-example.routes꞉> 
+; nREPL Connection was closed
